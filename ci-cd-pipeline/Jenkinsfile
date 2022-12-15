@@ -7,7 +7,7 @@ pipeline {
                  
                  sh '''docker info 
 
-                       docker build -t  ci-cd-pipeline/Dockerfile
+                       docker build -t Dockerfile
 
                        docker images'''
 
