@@ -18,7 +18,7 @@ pipeline {
                  
                  sh '''docker login --username kalaivasan --password Viveksan@1991 docker.io
                        docker tag test:1.1 kalaivasan/test_repo1
-                       docker push test:1.1
+                       docker push kalaivasan/test:1.1
                  '''
             }
 
