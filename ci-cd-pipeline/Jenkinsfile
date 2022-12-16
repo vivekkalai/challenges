@@ -23,7 +23,7 @@ pipeline {
              }
 
           }
-          stage('Deploy to AKS) {
+          stage('Deploy to AKS') {
             steps {
                  
                  echo "Test Deply"
