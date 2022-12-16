@@ -7,7 +7,7 @@ pipeline {
                  
                  sh '''docker info 
 
-                       docker build -f ${WORKSPACE}/ci-cd-pipeline/Dockerfile -t Test:1.1 .
+                       docker build -f ${WORKSPACE}/ci-cd-pipeline/Dockerfile -t test:1.1 .
 
                        docker images'''
 
