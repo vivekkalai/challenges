@@ -11,8 +11,8 @@ pipeline {
 
                        docker images'''
 
-            }
-        }
+             }
+          }
           stage('Pushing to Docker Hub') {
             steps {
                  
@@ -20,6 +20,13 @@ pipeline {
                        docker tag test:1.1 kalaivasan/test_repo1
                        docker push kalaivasan/test_repo1
                  '''
+             }
+
+          }
+          stage('Deploy to AKS) {
+            steps {
+                 
+                 echo "Test Deply"
             }
 
         }
