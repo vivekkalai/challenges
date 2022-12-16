@@ -12,6 +12,7 @@ pipeline {
                        docker images'''
 
             }
+        }
           stage('Pushing to Docker Hub') {
             steps {
                  
@@ -24,4 +25,4 @@ pipeline {
         }
     }
 }
-}
+
