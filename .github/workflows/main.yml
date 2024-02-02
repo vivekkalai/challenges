@@ -1,1 +1,6 @@
-build:
+name: Trigger test master
+
+on:
+  push:
+    branches:
+      - master
