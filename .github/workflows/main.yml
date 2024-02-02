@@ -4,3 +4,16 @@ on:
   push:
     branches:
       - master
+
+jobs:
+  trigger-test:
+    name: Use Self Hosted Machine
+    runs-on: self-hosted
+    # if: |
+    #   ( github.actor == 'honfchon' ) &&
+    #   github.event.pull_request.merged == true
+    steps:
+      - name: Checkout Repository 🛎️
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
